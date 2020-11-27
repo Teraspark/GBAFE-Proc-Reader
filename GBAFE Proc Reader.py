@@ -50,7 +50,8 @@ _6C_CALL_ROUTINE_2(@p)
 _6C_END_DUPLICATES
 _6C_CALL_ROUTINE_ARG(@p, @s2)
 _6C_19
-""".split()
+""".split('\n')
+procdefs = list(filter(None,procdefs))
 
 class procfile():
 	file = None
@@ -176,3 +177,15 @@ if __name__ == '__main__':
 	outsave.pack(side=tk.BOTTOM,pady = 5)
 	master.mainloop()
 	
+"""
+-	not done
++	wip
+*	finished
+
+-	change proc defs into a class
+	-	read in a language file for how the data is formatted
+		-	figure out how to set up termination case (end of data)
+	-	add extra button for switching languages
+-	set up command line options
+-	have error messages handled by a function
+"""
